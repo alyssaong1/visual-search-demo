@@ -10,11 +10,20 @@ The experiments were performed using CPU only. We used the market1501 dataset wh
 
 ## Running the FAISS notebook
 
+Assuming you have conda and python installed in your system already.
+
 Easiest way to install FAISS is via conda:
 ```bash
 # CPU version only
 conda install faiss-cpu -c pytorch
 ```
+
+To test the installation, run:
+```bash
+python faiss-installation-test.py
+```
+It runs some dummy code in FAISS and should return a number without throwing any errors if installation is successful. 
+If it fails, more detailed instructions [here](https://github.com/facebookresearch/faiss/blob/master/INSTALL.md).
 
 Load the dataset in to VM. I copied from local computer to VM using the below: 
 ```bash
