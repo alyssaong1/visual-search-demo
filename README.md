@@ -38,9 +38,34 @@ Run Jupyter Notebook in your VM using:
 jupyter notebook
 ```
 
-Then, navigate to the browser in your computer using the localhost link generated when you ran the jupyter notebook command. 
+Then, navigate to the browser in your computer using the localhost link generated when you ran the jupyter notebook command. You can test out the notebooks now. 
 
 ## Running the Nmslib notebook
+
+Easiest way to install nmslib is via pip. Make sure you have Python 3.x. Nmslib python library install instructions [here](https://github.com/nmslib/nmslib/tree/master/python_bindings).
+
+First, install the python dev tools:
+```bash
+sudo apt-get install python3-dev
+```
+
+Then do a pip install:
+```bash
+pip install nmslib
+```
+
+Exit and ssh back into your VM using:
+```bash
+ssh -L 8888:localhost:8888 <vm-username>@<your-vm-ip> 
+```
+The line above will enable you to access Jupyter using localhost in your computer's browser. 
+
+Run Jupyter Notebook in your VM using:
+```bash
+jupyter notebook
+```
+
+You can now run the notebooks that use nmslib (like market1501-nmslib.ipynb).
 
 ## Key Observations
 
